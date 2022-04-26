@@ -1,0 +1,37 @@
+.container {
+  background-image: url("../../images/road.jpg");
+  min-height: 100vh;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* color: #fff; */
+}
+.loginContent {
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 200px);
+  margin-top: -20px;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+}
+.loginContent h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.singleInputContainer {
+  margin: 20px 0;
+}
+.loginButtonEnd {
+  margin-top: 40px;
+}

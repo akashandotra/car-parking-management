@@ -1,0 +1,206 @@
+.container {
+  /* display: flex; */
+  width: 100%;
+  box-sizing: border-box;
+}
+.left {
+  width: 350px;
+  background-color: #222d32;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+.right {
+  margin-left: 350px;
+  width: calc(100% - 350px);
+  background-color: #ecf0f5;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.left * {
+  color: #fff;
+}
+.leftNavItem {
+  /* color: #db2723; */
+  color: #fff;
+  padding: 15px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.mainNavigationIndicator {
+  background-color: #1a2226;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.activeNavItem {
+  background-color: black;
+}
+.personaContainer {
+  margin-top: 10px;
+  padding: 20px;
+}
+.leftNavFooter {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+}
+.header {
+  font-size: 20px;
+}
+.parkingContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+}
+.singleField {
+  margin: 10px;
+}
+.recordDetails {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.recordTittle {
+  font-size: 14px;
+  font-style: italic;
+}
+.detailsWrapper {
+  margin-top: 20px;
+}
+.shimmerWrapper {
+  padding: 5px;
+}
+.areaContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.singleArea {
+  min-width: 300px;
+}
+.singleArea ul {
+  margin-top: 20px;
+}
+.singleArea ul li {
+  margin-bottom: 10px;
+}
+.mapContainer h3 {
+  font-size: 18px;
+}
+.mapListTopContainer {
+  margin-top: 20px;
+}
+.mapListTopContainer h4 {
+  font-size: 16px;
+}
+.cityContainer {
+  margin-top: 35px;
+}
+.areaNameH5 {
+  margin-top: 30px;
+}
+.cityNameH4 {
+  margin-top: 20px;
+}
+.cityContainer h5 {
+  font-size: 14px;
+}
+.mainMapContent {
+  color: #1a2226;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.singleParking {
+  border: 2px solid black;
+  width: 150px;
+  text-align: center;
+  padding: 8px 5px;
+}
+.singleParking p {
+  margin-top: 5px;
+}
+.parkingImage {
+  max-width: 100%;
+  height: 80px;
+  overflow: hidden;
+  margin: auto;
+}
+.parkingImage img {
+  height: 80px;
+  max-width: 95%;
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  /* height: 300px; */
+  margin: 1rem;
+  position: relative;
+  min-width: 90%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition-duration: 0.3s;
+  padding: 20px 10px;
+  display: flex;
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cardContent > div {
+  padding: 10px;
+}
+.card .parkingImage {
+  height: 100%;
+}
+.card .parkingImage img {
+  height: 200px;
+}
+.receiptMain {
+  width: 350px;
+  /* height: 600px; */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 30px 20px 30px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.receiptMain h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.receiptMain h4 {
+  margin-top: 15px;
+  font-weight: normal;
+}
+.receiptMain h1 {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.reCar {
+  margin-top: 15px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.reP {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.reTotal {
+  margin-top: 20px;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.reFinalDetails {
+  margin-top: 40px;
+  line-height: 2;
+  text-transform: uppercase;
+}

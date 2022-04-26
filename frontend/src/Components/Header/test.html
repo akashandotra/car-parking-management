@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/pdf-lib"></script>
+  </head>
+
+  <body>
+    <iframe
+      id="pdf"
+      style="width: 100%; height: 100%"
+      src="../../../../bill.pdf"
+    ></iframe>
+  </body>
+
+  <script>
+    createPdf();
+    async function createPdf() {
+      const pdfDoc = await PDFLib.PDFDocument.create();
+      // const page = pdfDoc.addPage([350, 400]);
+      // page.moveTo(110, 200);
+      // page.drawText("Hello World!");
+      const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
+      // document.getElementById("pdf").src = pdfDataUri;
+    }
+  </script>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello wrld</title>
+  </head>
+  <body>
+    <iframe
+      frameborder="0"
+      width="500px"
+      height="500px"
+      src="../../../../bill.pdf"
+    ></iframe>
+    <script>
+      const iframe = document.querySelector("iframe");
+      const cw = iframe.contentDocument || iframe.contentWindow.document;
+      console.log(cw);
+      const find = cw.body.innerHTML;
+      console.log(find);
+    </script>
+  </body>
+</html> -->
