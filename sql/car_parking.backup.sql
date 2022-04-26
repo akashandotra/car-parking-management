@@ -18,32 +18,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `car_parking`
+-- Database: `car_parkin
 --
 
--- --------------------------------------------------------
-
---
--- Table structure for table `incident`
---
-
-CREATE TABLE `incident` (
-  `incidentId` int(11) NOT NULL,
-  `incidentType` varchar(256) DEFAULT NULL,
-  `severityLevel` varchar(256) DEFAULT NULL,
-  `accountNumber` varchar(1024) DEFAULT NULL,
-  `customerName` varchar(512) DEFAULT NULL,
-  `incidentTitle` varchar(256) DEFAULT NULL,
-  `incidentDecription` text DEFAULT NULL,
-  `assignedTo` int(11) DEFAULT NULL,
-  `status` varchar(256) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `parkingrecords`
---
+
 
 CREATE TABLE `parkingrecords` (
   `parkingRecordId` int(11) NOT NULL,
@@ -234,17 +217,10 @@ INSERT INTO `user` (`userId`, `userEmail`, `password`, `fullName`, `isAdmin`) VA
 (1, 'admin@gmail.com', 'test1234', 'Akash Andotra', 1);
 
 --
--- Indexes for dumped tables
---
+
 
 --
--- Indexes for table `incident`
---
-ALTER TABLE `incident`
-  ADD PRIMARY KEY (`incidentId`),
-  ADD KEY `assignedTo` (`assignedTo`);
 
---
 -- Indexes for table `parkingrecords`
 --
 ALTER TABLE `parkingrecords`
@@ -272,15 +248,6 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`userId`),
   ADD UNIQUE KEY `userEmail` (`userEmail`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `incident`
---
-ALTER TABLE `incident`
-  MODIFY `incidentId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `parkingrecords`
@@ -311,11 +278,6 @@ ALTER TABLE `user`
 --
 
 --
--- Constraints for table `incident`
---
-ALTER TABLE `incident`
-  ADD CONSTRAINT `incident_ibfk_1` FOREIGN KEY (`assignedTo`) REFERENCES `user` (`userId`);
-
 --
 -- Constraints for table `parkingrecords`
 --
